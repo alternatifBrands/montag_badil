@@ -15,11 +15,11 @@ trait AHM_Response
     {
         return response()->json([
             'message' => 'user created',
-            'data' => [
+            // 'data' => [
                 'user' => $user,
                 'token' => $token,
                 'token_type' => 'Bearer',
-            ],
+            // ],
             'status' => true,
             'code' => Response::HTTP_CREATED,
         ], Response::HTTP_CREATED);
@@ -29,11 +29,11 @@ trait AHM_Response
     {
         return response()->json([
             'message' => 'user login',
-            'data' => [
+            // 'data' => [
                 'user' => $user,
                 'token' => $token,
                 'token_type' => 'Bearer',
-            ],
+            // ],
             'status' => true,
             'code' => Response::HTTP_OK,
         ], Response::HTTP_OK);
